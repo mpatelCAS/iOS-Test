@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (1.3.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/mpatelCAS/MDAlamofireCheck.git`, branch `swift-2.0`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: swift-2.0
+    :git: https://github.com/mpatelCAS/MDAlamofireCheck.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 61d6ddf9c91da83a062cbe29dc6b7f6a0a5d8789
+    :git: https://github.com/mpatelCAS/MDAlamofireCheck.git
+
+SPEC CHECKSUMS:
+  Alamofire: e57db85401895fda01783b3b9bda5b32d9f347ff
+
+COCOAPODS: 0.38.1
