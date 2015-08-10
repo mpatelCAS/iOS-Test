@@ -14,7 +14,7 @@
 		0826E37D1B2BED3D003572A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0826E37C1B2BED3D003572A1 /* Images.xcassets */; };
 		0826E3801B2BED3D003572A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0826E37E1B2BED3D003572A1 /* LaunchScreen.xib */; };
 		0826E38C1B2BED3D003572A1 /* demoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0826E38B1B2BED3D003572A1 /* demoAppTests.m */; };
-		8E6518F7265FF8D1F05A339C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ED539C3E85ED80FC9C55C6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		411640F895E5A1728FBFCD2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337239F82771BD7658F3170 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0337239F82771BD7658F3170 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0588008A23B8482075C1BB66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		0826E36C1B2BED3D003572A1 /* demoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0826E3701B2BED3D003572A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		0826E38A1B2BED3D003572A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0826E38B1B2BED3D003572A1 /* demoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoAppTests.m; sourceTree = "<group>"; };
 		C548018C82288B3CA8576879 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D8ED539C3E85ED80FC9C55C6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E6518F7265FF8D1F05A339C /* Pods.framework in Frameworks */,
+				411640F895E5A1728FBFCD2D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 		B8D79639B73F596820341BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8ED539C3E85ED80FC9C55C6 /* Pods.framework */,
+				0337239F82771BD7658F3170 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,7 +154,6 @@
 				0826E3681B2BED3D003572A1 /* Sources */,
 				0826E3691B2BED3D003572A1 /* Frameworks */,
 				0826E36A1B2BED3D003572A1 /* Resources */,
-				380CDDE0E2C2B5E46544B8F3 /* Embed Pods Frameworks */,
 				F16CFABAB645BE80DBE3797E /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -242,21 +241,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		380CDDE0E2C2B5E46544B8F3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F16CFABAB645BE80DBE3797E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
